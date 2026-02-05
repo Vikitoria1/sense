@@ -15,13 +15,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="body">
   <header class="header">
-    <div class="container header__container">
+    <div class="container">
       <nav class="menu">
-        <a class="logo header__logo" href="#">
+        <a class="logo header__logo" href="#body">
           <img src="images/logo.svg" alt="logo" width="85" height="30">
         </a>
+        <button class="menu__button" type="button" aria-label="open menu">
+          <span class="menu__button-line"></span>
+        </button>
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link" href="#">
@@ -54,15 +57,15 @@
             </a>
           </li>
         </ul>
+        <div class="header__actions">
+          <button class="header__button" type="button">
+            <img src="images/search-icon.svg" alt="search">
+          </button>
+          <button class="header__button" type="button">
+            <img src="images/cart-icon.svg" alt="add to cart">
+          </button>
+        </div>
       </nav>
-      <div class="header__actions">
-        <button class="header__button" type="button">
-          <img src="images/search-icon.svg" alt="search">
-        </button>
-        <button class="header__button" type="button">
-          <img src="images/cart-icon.svg" alt="add to cart">
-        </button>
-      </div>
     </div>
   </header>
   <main class="main">
@@ -202,7 +205,8 @@
                 <span class="badge">
                   Sale
                 </span>
-                <img class="product__card-img" src="images/highlight-1.png" alt="Monoi Shampoo" width="792" height="838">
+                <img class="product__card-img" src="images/highlight-1.png" alt="Monoi Shampoo" width="792"
+                  height="838">
               </div>
               <h3 class="product__card-name">
                 <a class="product__card-link" href="#">
@@ -222,7 +226,8 @@
           <li class="highlight__item--small">
             <article class="product__card">
               <div class="product__card-container">
-                <img class="product__card-img" src="images/highlight-2.png" alt="Everything Body Soap" width="396" height="344">
+                <img class="product__card-img" src="images/highlight-2.png" alt="Everything Body Soap" width="396"
+                  height="344">
               </div>
               <h3 class="product__card-name">
                 <a class="product__card-link" href="#">
@@ -321,6 +326,118 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <h2 class="title footer__top-title">
+          Get 20% off your first order
+        </h2>
+        <p class="footer__top-text">
+          Join our email list for exclusive offers and the latest news.
+        </p>
+        <form class="subscribe-form">
+          <input class="subscribe-form__input" type="email" id="email" name="email" placeholder="Email">
+          <button class="subscribe-form__button" type="submit" aria-label="Subscribe">
+          </button>
+        </form>
+      </div>
+      <div class="footer__wrapper">
+        <nav class="footer__nav">
+          <h3 class="footer__subtitle">
+            Menu
+          </h3>
+          <ul class="footer__nav-list">
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">
+                Skin Care
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">
+                Hair Care
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">
+                Body Care
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">
+                Nail Polish
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">
+                Blog
+              </a>
+            </li>
+            <li class="footer__nav-item">
+              <a class="footer__nav-link" href="#">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contacts">
+          <h3 class="footer__subtitle">
+            Our Store
+          </h3>
+          <address class="contacts__address">
+            <a class="contacts__link"
+              href="https://www.google.com/maps/search/?api=1&query=3455+St+Laurent+Blvd+Montreal+Quebec+H2X+2T6"
+              target="_blank" rel="noopener noreferrer">
+              3455 St Laurent Blvd
+              Montreal, Quebec H2X 2T6
+            </a>
+            <ul class="contacts__list">
+              <li class="contacts__item">
+                <span class="contacts__day">Mon - Fri</span>
+                <time datetime="09:00-19:00">9 a.m. - 7 p.m.</time>
+              </li>
+              <li class="contacts__item">
+                <span class="contacts__day">Sat - Sun</span>
+                <time datetime="10:00-18:00">10 a.m. - 6 p.m.</time>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer__inner">
+          <h3 class="footer__subtitle">
+            Our Promises
+          </h3>
+          <p class="footer__inner-text">
+            To create high quality, plant-based products that are safe for people and the planet.
+          </p>
+        </div>
+      </div>
+      <ul class="social">
+        <li class="social__item">
+          <a class="social__link" style="background-image: url('images/social-1.svg');" href="#"
+            aria-label="go to Twitter"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" style="background-image: url('images/social-2.svg');" href="#"
+            aria-label="go to Facebook"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" style="background-image: url('images/social-3.svg');" href="#"
+            aria-label="go to Pinterest"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" style="background-image: url('images/social-4.svg');" href="#"
+            aria-label="go to Instagram"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" style="background-image: url('images/social-5.svg');" href="#"
+            aria-label="go to TikTok"></a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer__bottom-text">
+      © 2023, theme-sense-demo Powered by Shopify
+    </p>
+  </footer>
   <script src="js/main.js"></script>
 </body>
 
